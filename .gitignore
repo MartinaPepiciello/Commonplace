@@ -1,0 +1,5 @@
+node_modules/
+.wrangler/
+.dev.vars
+# CSV backups exported from the app
+commonplace-*.csv

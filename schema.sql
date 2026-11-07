@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS quotes (
+  id TEXT PRIMARY KEY,
+  text TEXT NOT NULL,
+  character TEXT NOT NULL DEFAULT '',
+  book TEXT NOT NULL DEFAULT '',
+  author TEXT NOT NULL DEFAULT '',
+  category TEXT NOT NULL DEFAULT 'Misc',
+  created_at INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL,
+  deleted INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS categories (
+  name TEXT PRIMARY KEY,
+  color1 TEXT NOT NULL,
+  color2 TEXT NOT NULL,
+  sort INTEGER NOT NULL DEFAULT 0,
+  updated_at INTEGER NOT NULL,
+  deleted INTEGER NOT NULL DEFAULT 0
+);
